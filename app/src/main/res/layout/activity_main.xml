@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="35dp"
+        android:id="@+id/dashboard"
+        android:textColor="@android:color/black"
+       android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smart IOT Solutions"
+        android:gravity="center"
+        android:id="@+id/below"
+        android:layout_below="@+id/dashboard"
+        android:textSize="16dp"
+        />
+
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/cardview1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="15dp"
+      android:layout_margin="20dp"
+      android:elevation="15dp"
+      android:layout_below="@+id/below"
+      >
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <android.support.v7.widget.AppCompatImageView
+              android:id="@+id/alcoholimageview"
+              android:layout_width="150dp"
+              android:layout_height="150dp"
+              android:src="@drawable/alcohol"
+              />
+
+          <android.support.v7.widget.AppCompatTextView
+              android:id="@+id/alcoholtextview"
+              android:layout_toRightOf="@id/alcoholimageview"
+              android:hint="Alcohol Level"
+              android:gravity="center"
+              android:textColorHint="@android:color/black"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAlignment="center"
+              android:layout_marginTop="20dp"
+              android:textSize="25dp"/>
+          <android.support.v7.widget.AppCompatTextView
+              android:id="@+id/alcoholsensorvalue"
+              android:layout_below="@id/alcoholtextview"
+              android:layout_toRightOf="@id/alcoholimageview"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAlignment="center"
+              android:layout_marginTop="10dp"
+              android:hint="Value"
+              android:textColorHint="@android:color/black"
+              android:textSize="25dp"/>
+
+      </RelativeLayout>
+
+
+  </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_below="@id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="20dp"
+        android:elevation="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/soilimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/soil"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/soiltextview"
+                android:layout_toRightOf="@id/soilimage"
+                android:textColorHint="@android:color/black"
+                android:hint="Soil Moisture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="25dp"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/soilsensorvalue"
+                android:layout_below="@id/soiltextview"
+                android:layout_toRightOf="@id/soilimage"
+                android:layout_width="match_parent"
+                android:textColorHint="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:hint="Value"
+                android:textSize="25dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_below="@id/cardview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="20dp"
+        android:elevation="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/rfidimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/rfid"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/rfidtextview"
+                android:layout_toRightOf="@id/rfidimage"
+                android:textColorHint="@android:color/black"
+                android:hint="RFID Access"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="25dp"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/rfidsensorvalue"
+                android:layout_below="@id/rfidtextview"
+                android:layout_toRightOf="@id/rfidimage"
+                android:layout_width="match_parent"
+                android:textColorHint="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:hint="Value"
+                android:textSize="25dp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview4"
+            android:layout_below="@id/cardview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="20dp"
+            android:elevation="15dp"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/pulseimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/heart"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/pulsetextview"
+            android:layout_toRightOf="@id/pulseimage"
+            android:textColorHint="@android:color/black"
+            android:hint="Pulse Level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/pulsesensorvalue"
+            android:layout_below="@id/pulsetextview"
+            android:layout_toRightOf="@id/pulseimage"
+            android:layout_width="match_parent"
+            android:textColorHint="@android:color/black"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Value"
+            android:textSize="25dp"/>
+
+        </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview5"
+            android:layout_below="@id/cardview4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="20dp"
+            android:elevation="15dp"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/tankimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/tank"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tanktextview"
+                android:layout_toRightOf="@id/tankimage"
+                android:textColorHint="@android:color/black"
+                android:hint="Water Level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="25dp"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tanksensorvalue"
+                android:layout_below="@id/tanktextview"
+                android:layout_toRightOf="@id/tankimage"
+                android:layout_width="match_parent"
+                android:textColorHint="@android:color/black"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:hint="Value"
+                android:textSize="25dp"/>
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
